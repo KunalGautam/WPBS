@@ -1,4 +1,4 @@
 WPBS
 ====
 
-Wordpress Bootstrap Theme
+Wordpress bootstrap theme from scratch

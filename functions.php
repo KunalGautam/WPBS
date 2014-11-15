@@ -114,4 +114,9 @@ if ( function_exists( 'add_theme_support' ) ) {
 } 
 
 
+
+/**
+ * Theme Option Page
+ */
+require_once ( get_template_directory() . '/wp-admin/index.php' );
 ?>

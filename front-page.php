@@ -1,10 +1,8 @@
 <?php get_header(); ?>
 
 <?php while ( have_posts() ) : the_post() ?>
-
-	<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>> <!-- http://codex.wordpress.org/Template_Tags/post_class -->
-
- 			<header>  
+	<div class="row">
+	
 
 				<h3>
 				<a href="<?php the_permalink(); ?>">
@@ -16,7 +14,7 @@
 				<?php the_time(); ?>  <!-- Time published -->
 				<?php  the_author(); ?> <!-- Author of the post -->
 
-			</header>	
+			
 
 			<?php 	
 			if ( has_post_thumbnail() ) { // check if the post has a Post Thumbnail assigned to it. ?>
@@ -24,9 +22,9 @@
 					<?php the_post_thumbnail(); ?>
 				</aside>
 			<?php } ?>
-
+					
 			<?php the_content(); ?> <!-- Contents of a post -->
-
+					
 			<footer>	
 
 				<?php the_category(', ') ?>  <!-- Post category -->
@@ -40,8 +38,8 @@
 
 		
 				
-		</article>
-
+	
+</div>
 <?php endwhile; ?>
 
 <?php get_sidebar(); ?>

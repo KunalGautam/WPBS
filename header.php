@@ -58,7 +58,7 @@
             wp_nav_menu( array(
                 'menu'              => 'primary',
                 'theme_location'    => 'primary',
-                'depth'             => 9,
+                'depth'             => 13,
                 'container'         => '',
                 'container_class'   => '',
                 'menu_class'        => 'nav navbar-nav no-float',

@@ -35,7 +35,7 @@
 <header id="header">
 	
 
-	<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+	<nav class="navbar navbar-bg navbar-fixed-top" role="navigation">
 		<?php 
   // Fix menu overlap bug..
   if ( is_admin_bar_showing() ) echo '<div style="min-height: 28px;"></div>'; 
@@ -58,7 +58,7 @@
             wp_nav_menu( array(
                 'menu'              => 'primary',
                 'theme_location'    => 'primary',
-                'depth'             => 13,
+                'depth'             => 5,
                 'container'         => '',
                 'container_class'   => '',
                 'menu_class'        => 'nav navbar-nav no-float',

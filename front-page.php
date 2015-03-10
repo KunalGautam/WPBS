@@ -3,43 +3,37 @@
 <?php while ( have_posts() ) : the_post() ?>
 	<div class="row">
 	
-
-				<h3>
-				<a href="<?php the_permalink(); ?>">
-				<?php the_title(); ?>
-				</a>
-				</h3> <!-- Title of the post -->
-	
-				<?php echo get_the_date( ); ?> <!-- Date published -->
-				<?php the_time(); ?>  <!-- Time published -->
-				<?php  the_author(); ?> <!-- Author of the post -->
-
-			
-
-			<?php 	
-			if ( has_post_thumbnail() ) { // check if the post has a Post Thumbnail assigned to it. ?>
-				<aside>
-					<?php the_post_thumbnail(); ?>
-				</aside>
-			<?php } ?>
+				<div class="col-md-2 align-center height-fix visible-md-* visible-lg-* hidden-sm hidden-xs">	<br><div class="date"><p><?php echo get_the_date("d"); ?>
+													<span><?php echo get_the_date("F"); ?></span>
+													<h4><?php echo get_the_date("Y"); ?></h4>
+													
+													
+													<?php edit_post_link('Edit Post', '<button type="button" class="btn btn-info">', '</button>'); ?> </div>
+													</div>
+				<div class="col-md-10 col-lg-10 col-xs-12 col-sm-12">
+						<h3>
+						<a href="<?php the_permalink(); ?>">
+						<?php the_title(); ?>
+						</a>
+						</h3>
+						
+						<?php 	
+							if ( has_post_thumbnail() ) { // check if the post has a Post Thumbnail assigned to it. ?>
+						<aside>
+							<?php the_post_thumbnail(); ?>
+						</aside>
+						<?php } ?>
 					
-			<?php the_content(); ?> <!-- Contents of a post -->
-					
-			<footer>	
-
-				<?php the_category(', ') ?>  <!-- Post category -->
-				<?php the_tags(', ') ?>  <!-- Post tags -->
-	
-				 <?php comments_popup_link(); ?>.
-				<?php edit_post_link(); ?>
-
-
-			</footer>
-
-		
-				
-	
+						<?php the_content(); ?> <!-- Contents of a post -->
+						
+						</div>
+							
 </div>
+<footer>
+	  <b>Published by:</b> <?php  the_author(); ?><div class="hidden-md hidden-lg"> Published on <?php echo get_the_date(""); ?></div> | <?php the_category(', ') ?> | <?php comments_popup_link(); ?>.
+</footer>
+
+
 <?php endwhile; ?>
 
 <?php get_sidebar(); ?>

@@ -11,7 +11,7 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
    <script src="<?php bloginfo( 'stylesheet_directory' ); ?>/js/function.js"></script>
-<script src="<?php bloginfo( 'stylesheet_directory' ); ?>/js/bs.js"></script>
+<script src="<?php bloginfo( 'stylesheet_directory' ); ?>/js/bootstrap.js"></script>
 
 </body>
 </html>

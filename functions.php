@@ -6,7 +6,8 @@ register_nav_menus( array(
     'primary' => __( 'Primary Menu', 'THEMENAME' ),
 ) );
 
-
+// Register Custom pagination
+require_once('wp-pagination.php');
 
 
 

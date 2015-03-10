@@ -15,11 +15,6 @@ body {
 padding-top:50px;
 }
 
-/* Container */
-.container {
-padding-top:20px;
-}
-
 
 
 /* DropDown Menu */
@@ -81,7 +76,7 @@ margin-bottom:60px;
 
 /* Fix image scrolling issue */
 img {
- display: block;
+  display: block;
   max-width: 100%;
   height: auto;
 }
@@ -108,12 +103,8 @@ background-color:#f5f5f5;
 }
 
 .navbar-bg {
-background-color: #111;
-opacity: 0.4;
-
+opacity: 0.6;
 }
-
-
 
 /* Date Style */
 

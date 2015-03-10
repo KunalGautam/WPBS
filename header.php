@@ -35,7 +35,7 @@
 <header id="header">
 	
 
-	 <nav class="navbar navbar-bg navbar-default navbar-fixed-top" role="navigation">
+	 <nav class="navbar navbar-bg navbar-inverse navbar-fixed-top" role="navigation">
 		<?php 
   // Fix menu overlap bug..
   if ( is_admin_bar_showing() ) echo '<div style="min-height: 28px;"></div>'; 
@@ -48,7 +48,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-      <a class="navbar-brand" href="<?php echo home_url(); ?>"><?php bloginfo('name'); ?>        </a>
+      <a class="navbar-brand" href="<?php echo home_url(); ?>"><?php bloginfo('name'); ?></a>
     </div>
 <div id="navbar" class="navbar-collapse collapse">
         <?php
@@ -66,6 +66,7 @@
     </div>
 </div>
 </nav>
+
 
 </header>
 <div class="container">

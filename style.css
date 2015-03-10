@@ -66,6 +66,10 @@ left:-100%;
 margin-left:10px;
 }
 
+@media (min-width:767px) {
+ul.nav li.dropdown:hover > ul.dropdown-menu {display:block; 
+}
+
 /* Sticky footer styles
 -------------------------------------------------- */
 html {

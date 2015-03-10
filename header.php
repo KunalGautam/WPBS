@@ -35,25 +35,22 @@
 <header id="header">
 	
 
-	<nav class="navbar navbar-bg navbar-fixed-top" role="navigation">
+	 <nav class="navbar navbar-bg navbar-default navbar-fixed-top" role="navigation">
 		<?php 
   // Fix menu overlap bug..
   if ( is_admin_bar_showing() ) echo '<div style="min-height: 28px;"></div>'; 
 ?>
-  <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="<?php echo home_url(); ?>">
-                <?php bloginfo('name'); ?>
-            </a>
+  <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+      <a class="navbar-brand" href="<?php echo home_url(); ?>"><?php bloginfo('name'); ?>        </a>
     </div>
-
+<div id="navbar" class="navbar-collapse collapse">
         <?php
             wp_nav_menu( array(
                 'menu'              => 'primary',
@@ -67,6 +64,7 @@
             );
         ?>
     </div>
+</div>
 </nav>
 
 </header>

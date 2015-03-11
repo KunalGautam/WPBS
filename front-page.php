@@ -37,8 +37,10 @@
 <?php endwhile; ?>
 
 <?php get_sidebar(); ?>
+
 <?php
   if ( function_exists('wp_bootstrap_pagination') )
     wp_bootstrap_pagination();
 ?>
+
 <?php get_footer(); ?>

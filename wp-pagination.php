@@ -6,7 +6,7 @@
 function wp_bootstrap_pagination( $args = array() ) {
     
     $defaults = array(
-        'range'           => 4,
+        'range'           => 3,
         'custom_query'    => FALSE,
         'previous_string' => __( '<i class="glyphicon glyphicon-chevron-left"></i>', 'text-domain' ),
         'next_string'     => __( '<i class="glyphicon glyphicon-chevron-right"></i>', 'text-domain' ),

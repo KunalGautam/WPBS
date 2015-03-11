@@ -29,14 +29,13 @@
 						</div>
 							
 </div>
-<footer>
+<footer><br>
 	  <b>Published by:</b> <?php  the_author(); ?><div class="hidden-md hidden-lg"> Published on <?php echo get_the_date(""); ?></div> | <?php the_category(', ') ?> | <?php comments_popup_link(); ?>.
 </footer>
 
-
+<br><br>
 <?php endwhile; ?>
 
-<?php get_sidebar(); ?>
 
 <?php
   if ( function_exists('wp_bootstrap_pagination') )

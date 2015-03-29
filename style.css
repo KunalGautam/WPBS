@@ -61,9 +61,21 @@ left:-100%;
 margin-left:10px;
 }
 
-@media (min-width:767px) {
-ul.nav li.dropdown:hover > ul.dropdown-menu {display:block; 
+@media (min-width:768px) {
+ul.nav li.dropdown:hover > ul.dropdown-menu {
+display:block; 
 }
+.navbar-bg  {
+background:rgba(0,0,0,0.4) !important;
+
+}
+.navbar-nav > li > a, .navbar-brand, .navbar-brand:hover   {
+color: #FFF !important;
+}
+
+}
+
+
 
 /* Sticky footer styles
 -------------------------------------------------- */
@@ -88,22 +100,15 @@ margin-bottom:60px;
 .align-justify {
   text-align: justify !important;
 }
-.footer {
-position:absolute;
-bottom:0;
+#footer {
+bottom: 0;
+position: absolute;
 width:100%;
-/* Set the fixed height of the footer here */
+background-color:#f5f5f5 !important;
 height:60px;
-background-color:#f5f5f5;
 }
 
-.navbar-bg  {
-background:rgba(0,0,0,0.4) !important;
 
-}
-.navbar-nav > li > a, .navbar-brand, .navbar-brand:hover   {
-color: #FFF !important;
-}
  
 
 
@@ -145,4 +150,8 @@ color: #FFF !important;
 /* Fix for div, Left box where date is displayed */  
 .height-fix {
 height: 180px;
+}
+
+#spacer {
+    height: 60px;
 }

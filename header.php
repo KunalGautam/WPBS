@@ -70,6 +70,3 @@
 
 </header>
 <div class="container">
-
-
-

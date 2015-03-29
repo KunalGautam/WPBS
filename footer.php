@@ -1,11 +1,11 @@
 </div> <!-- /container -->
 
-
-	<footer class="footer">
+<div id="spacer"></div>
+	<div id="footer">
       <div class="container">
         <p class="text-muted">Place sticky footer content here.</p>
       </div>
-    </footer>
+    </div>
 
 <?php wp_footer(); ?>
 

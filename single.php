@@ -3,30 +3,13 @@
 <?php if(have_posts()) : ?>
 	<?php while(have_posts()) : the_post(); ?>
  
-		<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>> <!-- http://codex.wordpress.org/Template_Tags/post_class -->
+		<div class="row">
 
 
  			<header>  
 
-				<nav> <!-- Post navigation -->
-
-					<div id="prevpost"><?php previous_post_link(); ?></div>
-					<div id="nextpost"><?php next_post_link(); ?> </div>
-
-				</nav>
-
-				<h3>
-				<a href="<?php the_permalink(); ?>">
-				<?php the_title(); ?>
-				</a>
-				</h3> <!-- Title of the post -->
+				<h3><?php the_title(); ?></h3> <!-- Title of the post -->
 	
-				<?php echo get_the_date( ); ?> <!-- Date published -->
-				<?php the_time(); ?>  <!-- Time published -->
-				<?php  the_author(); ?><br /> <!-- Author of the post -->
-
-
-
 			</header>	
 
 			<?php 	
@@ -40,6 +23,7 @@
 			<?php the_content(); ?> <!-- Contents of a post -->
 
 			<footer>	
+				Published on : <?php echo get_the_date( ); ?> <?php the_time(); ?> by <b><?php  the_author(); ?><br /> <!-- Author of the post --></b>
 
 				<?php the_category(', ') ?>  <!-- Post category -->
 				<?php the_tags(', ') ?>  <!-- Post tags -->
@@ -53,7 +37,7 @@
 			</footer>
 
 				
-		</article>
+		</div>
 
 
 	

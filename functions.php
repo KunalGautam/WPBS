@@ -1,4 +1,6 @@
 <?php
+// Update Function
+require_once('include/update.php');
 
 // Register Custom Navigation Walker
 require_once('include/wp_bootstrap_navwalker.php');

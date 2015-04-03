@@ -1,27 +1,8 @@
 <?php
-/**/
-// TEMP: Enable update check on every request. Normally you don't need this! This is for testing only!
-//set_site_transient('update_themes', null);
-
-// NOTE: All variables and functions will need to be prefixed properly to allow multiple plugins to be updated
 
 /******************Change this*******************/
 $api_url = 'http://themes.wp.update.abhashtech.com/api/';
 /************************************************/
-
-/*******************Child Theme******************
-//Use this section to provide updates for a child theme
-//If using on child theme be sure to prefix all functions properly to avoid 
-//function exists errors
-if(function_exists('wp_get_theme')){
-    $theme_data = wp_get_theme(get_option('stylesheet'));
-    $theme_version = $theme_data->Version;  
-} else {
-    $theme_data = get_theme_data( get_stylesheet_directory() . '/style.css');
-    $theme_version = $theme_data['Version'];
-}    
-$theme_base = get_option('stylesheet');
-**************************************************/
 
 
 /***********************Parent Theme**************/
